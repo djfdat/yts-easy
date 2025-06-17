@@ -163,7 +163,7 @@
 <div class="flex flex-col h-full">
 	<!-- Filters Section -->
 	<div class="p-4 bg-base-200 border-b border-base-300">
-		<h2 class="text-2xl font-bold mb-4">Movie Search</h2>
+		<h2 class="text-2xl font-bold mb-4 text-neutral-100">YTS Easy</h2>
 
 		<!-- Search Input -->
 		<div class="form-control mb-3">
@@ -311,7 +311,9 @@
 							/>
 						</figure>
 						<div class="card-body p-4 flex-1 min-w-0">
-							<h3 class="card-title text-base line-clamp-1">{movie.title}</h3>
+							<h3 class="card-title text-lg line-clamp-1 text-neutral-100">
+								{movie.title}
+							</h3>
 							<div
 								class="flex items-center gap-2 text-sm text-base-content/70 mb-2"
 							>

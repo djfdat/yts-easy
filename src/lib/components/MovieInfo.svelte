@@ -62,7 +62,9 @@
 				</div>
 
 				<div class="flex-1">
-					<h1 class="text-3xl font-bold mb-2">{movie.title}</h1>
+					<h1 class="text-3xl font-bold mb-2 text-neutral-100">
+						{movie.title}
+					</h1>
 					<div class="flex flex-wrap items-center gap-4 mb-4">
 						<span class="badge badge-primary badge-lg">{movie.year}</span>
 						<div class="flex items-center gap-1">
@@ -81,7 +83,7 @@
 							>{formatRuntime(movie.runtime)}</span
 						>
 						<span class="badge badge-outline"
-							>{movie.mpaa_rating || "Not Rated"}</span
+							>{movie.mpa_rating || "Not Rated"}</span
 						>
 					</div>
 
@@ -117,7 +119,7 @@
 				<div class="mb-6">
 					<h2 class="text-2xl font-bold mb-3">Plot Summary</h2>
 					<div class="prose max-w-none">
-						<p class="text-base-content/80 leading-relaxed">
+						<p class="text-neutral-200 leading-relaxed">
 							{movie.description_full ||
 								movie.synopsis ||
 								"No description available."}
