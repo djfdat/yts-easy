@@ -1,5 +1,5 @@
 <script lang="ts">
-	import '../app.css';
+	import "../app.css";
 
 	let { children } = $props();
 </script>
@@ -11,3 +11,5 @@
 </svelte:head>
 
 {@render children()}
+
+export const prerender = true;
